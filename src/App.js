@@ -1,15 +1,25 @@
-import react from 'react'; 
-import Header from './components/Header'
-import './App.css';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Rocket from "./components/Rocket";
+import Mission from "./components/Mission";
+import Profile from "./components/Profile";
+import NoPage from "./components/NoPage";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header/>
-      </div>
-      
-     
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Rocket />} />
+          <Route path="mission" element={<Mission />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
