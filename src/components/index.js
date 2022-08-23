@@ -1,5 +1,4 @@
 // eslint-disable-next-line import/prefer-default-export
-export { default as Layout } from './Layout';
 export { default as Mission } from './Mission';
 export { default as Profile } from './Profile';
 export { default as Rocket } from './Rocket';
