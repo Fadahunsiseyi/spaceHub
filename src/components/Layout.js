@@ -1,31 +1,45 @@
-import { Outlet, Link } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/Navbar.css';
 
-const Layout = () => {
+const Navbar = () => {
+  const urls = [
+    {
+      id: 1,
+      url: '/',
+      text: 'Rockets',
+    },
+    {
+      id: 2,
+      url: '/missions',
+      text: 'Missions',
+    },
+    {
+      id: 3,
+      url: '/myprofile',
+      text: 'My Profile',
+    },
+  ];
+
   return (
-        <>
-        <container>
-        <hearder> 
-          <div><img src="./planet.png" width="40px"/></div>
-          <h1>Space Traveler's Hub</h1>
-        <nav>
-        <ul>
-          <li>
-            <Link to="/">Rocket</Link>
+    <nav className="navbar">
+      <div className="Brend-container">
+        <img src="planet.png" className="Brend" alt="Planet-img" />
+        <h1 className="nav-head">Space Travelers&apos; Hub</h1>
+      </div>
+      <ul className="nav-menu">
+        {urls.map((url) => (
+          <li className="nav-item" key={url.id}>
+            <NavLink to={url.url}>{url.text}</NavLink>
           </li>
-          <li>
-            <Link to="/mission">Mission</Link>
-          </li>
-          <li>
-            <Link to="/profile">MyProfile</Link>
-          </li>
-        </ul>
-      </nav>
-      </hearder>
-      </container>
-<hr></hr>
-      <Outlet />
-    </>
-  )
+        ))}
+      </ul>
+    </nav>
+  );
 };
 
-export default Layout;
+export default Navbar;
+
+
+
+ 
