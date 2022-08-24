@@ -37,3 +37,7 @@ export default function reducer(state = initialState, action) {
   }
 }
 
+export const fetchMission = () => async (dispatch) => {
+  const missions = await getMissions();
+  dispatch({ type: FETCH_MISSION, payload: missions });
+};
