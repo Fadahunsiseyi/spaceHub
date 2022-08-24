@@ -41,3 +41,7 @@ export const fetchMission = () => async (dispatch) => {
   const missions = await getMissions();
   dispatch({ type: FETCH_MISSION, payload: missions });
 };
+export const joinMission = (id) => ({
+  type: JOIN_MISSION,
+  payload: { id },
+});
