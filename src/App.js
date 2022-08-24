@@ -5,6 +5,7 @@ import Missions from './pages/Missions';
 import Layout from './components/shared/Layout';
 import Profile from './pages/Profiles';
 import { NoPage } from './components';
+import './styles/global.scss';
 
 export default function App() {
   return (
