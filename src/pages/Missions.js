@@ -5,7 +5,7 @@ import Mission from '../components/Mission';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions);
+  const missions = useSelector((state) => state.missionReducer);
 
   useEffect(() => {
     if (!missions.length) {

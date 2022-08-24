@@ -5,7 +5,7 @@ const LEAVE_MISSION = ' LEAVE_MISSION';
 const FETCH_MISSION = ' FETCH_MISSION';
 
 const initialState = [];
-export default function reducer(state = initialState, action) {
+export default function missionReducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_MISSION:
       return action.payload.map((mission) => ({
@@ -14,9 +14,9 @@ export default function reducer(state = initialState, action) {
       }));
     case JOIN_MISSION:
       return state.map((mission) => {
-        if (mission.id === action.payload.id) {
+        if (mission.mission_id === action.payload.id) {
           return {
-            ...state,
+            ...mission,
             join: true,
           };
         }
@@ -24,9 +24,9 @@ export default function reducer(state = initialState, action) {
       });
     case LEAVE_MISSION:
       return state.map((mission) => {
-        if (mission.id === action.payload.id) {
+        if (mission.mission_id === action.payload.id) {
           return {
-            ...state,
+            ...mission,
             join: false,
           };
         }

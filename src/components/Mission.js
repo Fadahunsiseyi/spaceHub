@@ -10,6 +10,10 @@ const Mission = (props) => {
     description,
     join,
   } = props;
+  console.log(id,
+    name,
+    description,
+    join);
   const dispatch = useDispatch();
   const handleClick = () => {
     if (join) {
