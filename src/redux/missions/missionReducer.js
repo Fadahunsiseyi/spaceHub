@@ -20,8 +20,20 @@ export default function reducer(state = initialState, action) {
             join: true,
           };
         }
+        return mission;
+      });
+    case LEAVE_MISSION:
+      return state.map((mission) => {
+        if (mission.id === action.payload.id) {
+          return {
+            ...state,
+            join: false,
+          };
+        }
+        return mission;
       });
     default:
       return state;
   }
 }
+
