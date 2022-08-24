@@ -7,24 +7,32 @@
   padding: 10px 15px;
 }
 
-.navbar {
-  border-bottom: 1px solid lightgray;
+.navbar .navbar,
+.nav-menu .navbar {
+  border-bottom: 1px solid #d3d3d3;
 }
 
-.Brend-container {
+.navbar .brand-container,
+.nav-menu .brand-container {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
 }
 
-.Brend {
+.navbar .brand-container .brand,
+.nav-menu .brand-container .brand {
   width: 60px;
 }
 
-.nav-menu li {
+.navbar .nav-menu li,
+.nav-menu .nav-menu li {
   list-style: none;
 }
 
-a {
+.navbar .nav-menu li a,
+.nav-menu .nav-menu li a {
   margin-right: 32px;
   text-decoration: none;
   font-size: 18px;
@@ -32,7 +40,14 @@ a {
   color: #007bff;
 }
 
-a:hover {
+.navbar .nav-menu li a:hover,
+.nav-menu .nav-menu li a:hover {
+  text-decoration: underline;
+  color: #00a2b8;
+}
+
+.navbar .nav-menu li .active,
+.nav-menu .nav-menu li .active {
   text-decoration: underline;
   color: #00a2b8;
 }

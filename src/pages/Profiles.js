@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Profile() {
+function Profiles() {
   return (
     <div>Profile</div>
   );
 }
 
-export default Profile;
+export default Profiles;

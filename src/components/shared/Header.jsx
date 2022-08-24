@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/Navbar.css';
 
 const Navbar = () => {
   const urls = [
@@ -23,8 +22,8 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="Brend-container">
-        <img src="planet.png" className="Brend" alt="Planet-img" />
+      <div className="brand-container">
+        <img src="planet.png" className="brand" alt="Planet-img" />
         <h1 className="nav-head">Space Travelers&apos; Hub</h1>
       </div>
       <ul className="nav-menu">
