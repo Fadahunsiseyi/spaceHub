@@ -45,3 +45,7 @@ export const joinMission = (id) => ({
   type: JOIN_MISSION,
   payload: { id },
 });
+export const leaveMission = (id) => ({
+  type: LEAVE_MISSION,
+  payload: { id },
+});
