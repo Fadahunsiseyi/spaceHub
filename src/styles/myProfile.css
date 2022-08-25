@@ -1,0 +1,25 @@
+.wrapper_profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  margin: 20px;
+}
+
+.profile h3 {
+  margin-bottom: 21px;
+  color: #000;
+}
+
+.list li {
+  border: 1px solid gray;
+  width: 15rem;
+  padding: 15px 25px;
+  color: #191919;
+}
+
+.active {
+  text-decoration: underline;
+  color: black;
+}
