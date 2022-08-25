@@ -11,21 +11,33 @@ const Myprofile = () => {
 
   return (
     <div className="wrapper_profile">
-      <div className="profile">
+      <div className="rockets-profile">
         <h3>My Rockets</h3>
-        <ul className="list">
-          {activeRockets.map((rock) => <li key={rock.rocket_name}>{rock.rocket_name}</li>)}
+        <ul className="lists">
+          {activeRockets.length > 0 ? (
+            activeRockets.map((rock) => (
+              <li key={rock.rocket_name}>{rock.rocket_name}</li>
+            ))
+          ) : (
+            <li>
+              <h6>Reserved Rockets Not Found</h6>
+            </li>
+          )}
         </ul>
       </div>
-      <div className="profile">
+      <div className="mission-profile">
         <h3>My Missions</h3>
-        {/* <ul className="list">
-          {
-            misItem.map((mission) => (
+        <ul className="lists">
+          {activeMissions.length > 0 ? (
+            activeMissions.map((mission) => (
               <li key={mission.mission_name}>{mission.mission_name}</li>
             ))
-          }
-        </ul> */}
+          ) : (
+            <li>
+              <h6>Activated Missions Not Found</h6>
+            </li>
+          )}
+        </ul>
       </div>
     </div>
   );
