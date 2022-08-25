@@ -1,11 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import '../styles/myProfile.css';
 
 const Profile = () => {
   const rockets = useSelector((state) => state.rocketReducers);
   const missions = useSelector((state) => state.missionReducer);
-  const activeRockets = rockets.rockets.filter((rocket) => rocket.reserve === true);
+  const activeRockets = rockets.rockets.filter(
+    (rocket) => rocket.reserve === true,
+  );
   const activeMissions = missions.filter((mission) => mission.join);
   return (
     <div className="wrapper_profile">
