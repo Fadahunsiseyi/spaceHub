@@ -4,10 +4,8 @@ import '../styles/myProfile.css';
 const Myprofile = () => {
   const rockets = useSelector((state) => state.rocketReducers);
   const missions = useSelector((state) => state.missionReducer);
-  console.log(missions, 'the mission in profile');
-  const activeRockets = rockets.rockets.filter((item) => item.reserve === true);
+  const activeRockets = rockets.rockets.filter((rocket) => rocket.reserve === true);
   const activeMissions = missions.filter((mission) => mission.join);
-  /* const misItem = GState.missions.filter((item) => item.join === true); */
 
   return (
     <div className="wrapper_profile">
