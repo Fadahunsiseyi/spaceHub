@@ -12,13 +12,15 @@
 
   .brand-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* flex-direction: row;
+    justify-content: center; */
     align-items: center;
-    border: 2px solid red;
+    font-size: 25px;
+    margin-left: -9.9%;
 
     .brand {
-      width: 60px;
+      width: 70px;
+      margin-right:  20px;
     }
   }
 
