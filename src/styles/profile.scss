@@ -1,22 +1,22 @@
 .wrapper_profile {
-  display: flex;
-  justify-content: center;
-  .rockets-profile {
-    margin: 20px;
-    h3 {
-      margin-bottom: 21px;
-      color: #000;
-    }
-    li {
-      border: 1px solid gray;
-      width: 15rem;
-      padding: 15px 25px;
-      color: #191919;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  h2 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #000;
+  }
+  ul {
+    border: 1px solid #c5c5c5;
+    border-radius: 0.25rem;
 
-      &.active {
-        text-decoration: underline;
-        color: black;
-      }
+    li {
+      padding: 1rem;
+    }
+
+    li + li {
+      border-top: 1px solid #c5c5c5;
     }
   }
 }
