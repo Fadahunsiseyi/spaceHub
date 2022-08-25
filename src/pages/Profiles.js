@@ -2,8 +2,11 @@ import { useSelector } from 'react-redux';
 import '../styles/myProfile.css';
 
 const Myprofile = () => {
-  const GState = useSelector((state) => state.rocketReducers);
-  const resItem = GState.rockets.filter((item) => item.reserve === true);
+  const rockets = useSelector((state) => state.rocketReducers);
+  const missions = useSelector((state) => state.missionReducer);
+  console.log(missions, 'the mission in profile');
+  const activeRockets = rockets.rockets.filter((item) => item.reserve === true);
+  const activeMissions = missions.filter((mission) => mission.join);
   /* const misItem = GState.missions.filter((item) => item.join === true); */
 
   return (
@@ -11,7 +14,7 @@ const Myprofile = () => {
       <div className="profile">
         <h3>My Rockets</h3>
         <ul className="list">
-          {resItem.map((rock) => <li key={rock.rocket_name}>{rock.rocket_name}</li>)}
+          {activeRockets.map((rock) => <li key={rock.rocket_name}>{rock.rocket_name}</li>)}
         </ul>
       </div>
       <div className="profile">
