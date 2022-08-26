@@ -21,7 +21,7 @@ This web application provides commercial and scientific space travel services. T
 
 ## See Project
 
-[Space Travelers Hub](live)
+[Space Travelers Hub](https://resilient-eclair-b07bd1.netlify.app/)
 
 
 ## Getting Started
