@@ -17,17 +17,7 @@ export default function missionReducer(state = initialState, action) {
         if (mission.mission_id === action.payload.id) {
           return {
             ...mission,
-            join: true,
-          };
-        }
-        return mission;
-      });
-    case LEAVE_MISSION:
-      return state.map((mission) => {
-        if (mission.mission_id === action.payload.id) {
-          return {
-            ...mission,
-            join: false,
+            join: !mission.join,
           };
         }
         return mission;

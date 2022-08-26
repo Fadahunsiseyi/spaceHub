@@ -3,13 +3,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getRocketFromApi } from '../redux/rockets/rocketReducers';
 import Rock from '../components/Rocket';
 
+let initial = true;
+
 const RocketList = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rocketReducers);
 
   useEffect(() => {
-    if (!rockets.rockets[0]) {
+    if (initial) {
       dispatch(getRocketFromApi());
+      initial = false;
     }
   }, []);
   return (

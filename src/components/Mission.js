@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { leaveMission, joinMission } from '../redux/missions/missionReducer';
+import { joinMission } from '../redux/missions/missionReducer';
 
 const Mission = (props) => {
   const {
@@ -12,11 +12,7 @@ const Mission = (props) => {
   } = props;
   const dispatch = useDispatch();
   const handleClick = () => {
-    if (join) {
-      dispatch(leaveMission(id));
-    } else {
-      dispatch(joinMission(id));
-    }
+    dispatch(joinMission(id));
   };
   return (
     <tr className="mission-container">
