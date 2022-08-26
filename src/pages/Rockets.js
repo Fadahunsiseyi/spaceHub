@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRocketFromApi } from '../redux/rockets/rocketReducers';
 import Rock from '../components/Rocket';
-import '../styles/rockets.css';
 
 const RocketList = () => {
   const dispatch = useDispatch();
