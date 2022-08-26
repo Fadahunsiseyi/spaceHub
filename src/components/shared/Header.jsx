@@ -10,11 +10,16 @@ const Navbar = () => {
     },
     {
       id: 2,
+      url: '/',
+      text: 'Rockets',
+    },
+    {
+      id: 3,
       url: '/missions',
       text: 'Missions',
     },
     {
-      id: 3,
+      id: 4,
       url: '/myprofile',
       text: 'My Profile',
     },
