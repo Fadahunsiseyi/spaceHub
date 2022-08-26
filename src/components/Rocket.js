@@ -1,6 +1,5 @@
 import { useDispatch } from 'react-redux';
 import { createReserve } from '../redux/rockets/rocketReducers';
-import '../styles/rockets.css';
 
 const Rock = (props) => {
   const rocket = props;
@@ -19,7 +18,7 @@ const Rock = (props) => {
         <img src={rocket.rock.flickr_images[0]} alt={rocket.rocket_name} className="rocketImage" />
       </div>
       <div className="details">
-        <h1>{rocket.rock.rocket_name}</h1>
+        <h2>{rocket.rock.rocket_name}</h2>
         <br />
         <p className="rocket-p">
           {reserve && <small> Reserved </small>}

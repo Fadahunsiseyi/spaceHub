@@ -1,53 +1,84 @@
-.navbar,
-.nav-menu {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e8e8e8;
 }
 
-.navbar .navbar,
-.nav-menu .navbar {
-  border-bottom: 1px solid #d3d3d3;
+@media only screen and (max-width: 750px) {
+  .navbar {
+    padding: 0.4rem;
+  }
 }
 
-.navbar .brand-container,
-.nav-menu .brand-container {
+.navbar .brand-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  gap: 0.5rem;
   align-items: center;
-  border: 2px solid red;
 }
 
-.navbar .brand-container .brand,
-.nav-menu .brand-container .brand {
-  width: 60px;
+.navbar .brand-wrapper:link {
+  text-decoration: none;
 }
 
-.navbar .nav-menu li,
-.nav-menu .nav-menu li {
+.navbar .brand-wrapper .brand {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar .brand-wrapper .brand {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.navbar .brand-wrapper h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar .brand-wrapper h1 {
+    font-size: 0.8rem;
+  }
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar .nav-menu {
+    gap: 1rem;
+    font-size: 0.74rem;
+    padding: 0;
+  }
+}
+
+.navbar .nav-menu li {
   list-style: none;
 }
 
-.navbar .nav-menu li a,
-.nav-menu .nav-menu li a {
-  margin-right: 32px;
+.navbar .nav-menu li a {
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #007bff;
 }
 
-.navbar .nav-menu li a:hover,
-.nav-menu .nav-menu li a:hover {
+.navbar .nav-menu li a:hover {
   text-decoration: underline;
   color: #00a2b8;
 }
 
-.navbar .nav-menu li .active,
-.nav-menu .nav-menu li .active {
+.navbar .nav-menu li .active {
   text-decoration: underline;
   color: #00a2b8;
 }

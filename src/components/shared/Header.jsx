@@ -23,13 +23,15 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="brand-container">
-        <img src="planet.png" className="brand" alt="Planet-img" />
-        <h1 className="nav-head">Space Travelers&apos; Hub</h1>
+        <NavLink className="brand-wrapper" to="/">
+          <img src="planet.png" className="brand" alt="Planet-img" />
+          <h1 className="nav-head">Space Travelers&apos; Hub</h1>
+        </NavLink>
       </div>
       <ul className="nav-menu">
         {urls.map((url) => (
           <li className="nav-item" key={url.id}>
-            <NavLink to={url.url}>{url.text}</NavLink>
+            <NavLink className="nav-link" to={url.url}>{url.text}</NavLink>
           </li>
         ))}
       </ul>
