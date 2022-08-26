@@ -6,8 +6,9 @@
   gap: 1rem;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #e8e8e8;
+
   @media only screen and (max-width: 750px) {
-      padding: 0.4rem;
+    padding: 0.4rem;
   }
 
   .brand-wrapper {
@@ -22,30 +23,36 @@
     .brand {
       width: 2rem;
       height: 2rem;
+
       @media only screen and (max-width: 920px) {
         width: 1.5rem;
         height: 1.5rem;
-       }
+      }
     }
+
     h1 {
       font-size: 1.2rem;
       font-weight: 500;
       color: #000;
+
       @media only screen and (max-width: 920px) {
         font-size: 0.8rem;
-       }
+      }
     }
   }
+
   .nav-menu {
     display: flex;
     gap: 2rem;
     justify-content: space-between;
     padding: 0.5rem;
+
     @media only screen and (max-width: 920px) {
       gap: 1rem;
       font-size: 0.74rem;
       padding: 0;
-     }
+    }
+
     li {
       list-style: none;
 

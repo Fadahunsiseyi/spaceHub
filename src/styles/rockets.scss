@@ -7,43 +7,51 @@
     align-items: center;
     margin-bottom: 1rem;
     width: 100%;
+
     @media only screen and (max-width: 920px) {
       flex-direction: column;
       padding: 1rem;
     }
+
     .image {
       cursor: pointer;
       height: 100%;
+
       img {
         width: 280px;
         height: 250px;
         padding: 10px 5px;
+
         @media only screen and (max-width: 920px) {
           width: 100%;
           height: 350px;
         }
       }
     }
+
     .details {
       padding-left: 20px;
+
       h2 {
         font-weight: 500;
         color: #000;
       }
+
       .rocket-p {
         font-size: 90%;
         line-height: 1.5;
         color: #000;
-        
-  small {
-    background-color: #33a5ad;
-    color: #fff;
-    font-size: 15px;
-    margin-right: 5px;
-    border-radius: 10%;
-    padding: 2px;
-  }
+
+        small {
+          background-color: #33a5ad;
+          color: #fff;
+          font-size: 15px;
+          margin-right: 5px;
+          border-radius: 10%;
+          padding: 2px;
+        }
       }
+
       button {
         background-color: #0290ff;
         color: #fff;
@@ -52,12 +60,11 @@
         padding: 0.5rem;
         cursor: pointer;
       }
+
       .reservedButton {
         background-color: #fff;
         color: #0290ff;
       }
     }
   }
-  
 }
-

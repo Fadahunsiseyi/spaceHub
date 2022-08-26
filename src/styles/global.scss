@@ -16,16 +16,18 @@ body {
   width: 80%;
   margin: auto;
   color: #666;
+
   @media only screen and (max-width: 720px) {
     width: 100%;
     padding: 1rem;
-   }
+  }
 }
 
 .content-container {
   padding: 1rem 0.5rem 5rem;
   display: block;
 }
+
 @import url(./navbar.scss);
 @import url(./profile.scss);
 @import url(./mission.scss);
