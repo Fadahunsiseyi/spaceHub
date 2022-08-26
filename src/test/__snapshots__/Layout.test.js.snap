@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages renders correctly Should redenders NavBar Component succefully 1`] = `
+<div
+  className="app-layout"
+>
+  <nav
+    className="navbar"
+  >
+    <div
+      className="brand-container"
+    >
+      <a
+        aria-current="page"
+        className="brand-wrapper active"
+        href="#/"
+        onClick={[Function]}
+      >
+        <img
+          alt="Planet-img"
+          className="brand"
+          src="planet.png"
+        />
+        <h1
+          className="nav-head"
+        >
+          Space Travelers' Hub
+        </h1>
+      </a>
+    </div>
+    <ul
+      className="nav-menu"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="#/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="#/missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="#/myprofile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="content-container"
+  />
+</div>
+`;

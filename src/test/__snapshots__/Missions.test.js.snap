@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages renders correctly Missions page renders correctly 1`] = `
+<div
+  className="mission-container-list"
+>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Run the test for the reserved list of rockets To Test Rockets component renders successfully 1`] = `
+<div
+  className="rockets"
+/>
+`;
