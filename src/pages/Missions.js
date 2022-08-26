@@ -3,13 +3,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchMission } from '../redux/missions/missionReducer';
 import Mission from '../components/Mission';
 
+let initial = true;
+
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missionReducer);
 
   useEffect(() => {
-    if (!missions.length) {
+    if (initial) {
       dispatch(fetchMission());
+      initial = false;
     }
   }, [dispatch]);
 
