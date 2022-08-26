@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar {
+    padding: 0.4rem;
+  }
+}
+
+.navbar .brand-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.navbar .brand-wrapper:link {
+  text-decoration: none;
+}
+
+.navbar .brand-wrapper .brand {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar .brand-wrapper .brand {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.navbar .brand-wrapper h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar .brand-wrapper h1 {
+    font-size: 0.8rem;
+  }
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar .nav-menu {
+    gap: 1rem;
+    font-size: 0.74rem;
+    padding: 0;
+  }
+}
+
+.navbar .nav-menu li {
+  list-style: none;
+}
+
+.navbar .nav-menu li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #007bff;
+}
+
+.navbar .nav-menu li a:hover {
+  text-decoration: underline;
+  color: #00a2b8;
+}
+
+.navbar .nav-menu li .active {
+  text-decoration: underline;
+  color: #00a2b8;
+}
